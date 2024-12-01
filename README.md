@@ -1,2 +1,3 @@
-# adventofcode2024
-My Advent of Code (2024) submissions
+# Advent of Code 2024
+
+[Sam LaGrave](https://github.com/SLaGrave)'s Advent of Code (2024) submissions.
