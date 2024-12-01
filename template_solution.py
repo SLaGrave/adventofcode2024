@@ -29,5 +29,5 @@ if __name__ == "__main__":
     p1 = part1(data.copy())
     print(f"Part 1 solution:\n{p1}")
     print("====================================")
-    p2 = part1(data.copy())
+    p2 = part2(data.copy())
     print(f"Part 2 solution:\n{p2}")
