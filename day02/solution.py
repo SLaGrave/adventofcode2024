@@ -30,9 +30,19 @@ def part1(data: list):
 def part2(data: list):
     s = 0
     for line in data:
-        # do something
-        ...
-    
+        is_safe = (part1([line])==1)
+        if is_safe:
+            s+=1
+            continue
+        report = line.split(" ")
+        for idx in range(len(report)):
+            new = report.copy()
+            new.pop(idx)
+            tmp = " ".join(new)
+            is_safe = (part1([tmp])==1)
+            if is_safe:
+                s+=1
+                break
     return s
 
 
