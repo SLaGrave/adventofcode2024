@@ -7,9 +7,23 @@ def clean_data(data: list) -> list:
 def part1(data: list):
     s = 0
     for line in data:
-        # do something
-        ...
-    
+        report = line.split(" ")
+        report = [int(q) for q in report]
+        good = True
+        if not (
+            sorted(report) == report
+            or list(reversed(sorted(report))) == report
+        ):
+            good = False
+        if not (len(set(report)) == len(report)):
+            good = False
+        for i in range(len(report)-1):
+            x = int(report[i])
+            y = int(report[i+1])
+            if not (abs(x-y) <= 3):
+                good = False
+                break
+        if good: s += 1
     return s
 
 
