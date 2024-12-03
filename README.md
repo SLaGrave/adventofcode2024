@@ -10,3 +10,4 @@ As a self-professed "language nerd", I want to use Advent of Code to sharpen my 
 | --------------- | ------------------- | -------------------------------- | ---- |
 | [01](./day01/)  | :heavy_check_mark:  | :o:                              | :o:  |
 | [02](./day02/)  | :heavy_check_mark:  | :o:                              | :o:  |
+| [03](./day03/)  | :heavy_check_mark:  | :o:                              | :o:  |
