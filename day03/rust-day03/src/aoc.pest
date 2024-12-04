@@ -14,6 +14,8 @@ aoc_mul = {"mul" ~ "(" ~ aoc_integer ~ "," ~ aoc_integer ~ ")"}
 aoc_program = {
     (
         aoc_mul
+        | aoc_do
+        | aoc_dont
         | aoc_bad
     )*
 }
