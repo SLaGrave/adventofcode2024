@@ -38,7 +38,7 @@ def part2(left, right) -> int:
 
 
 if __name__ == "__main__":
-    with open("./input.txt", "r") as f:
+    with open("../input.txt", "r") as f:
         data = f.readlines()
     left, right = clean_data(data)
     p1 = part1(left.copy(), right.copy())

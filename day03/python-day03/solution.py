@@ -39,7 +39,7 @@ def part2(data: list):
 
 
 if __name__ == "__main__":
-    with open("./input.txt", "r") as f:
+    with open("../input.txt", "r") as f:
         data = f.readlines()
     data = clean_data(data)
     p1 = part1(data.copy())
