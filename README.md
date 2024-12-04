@@ -8,7 +8,7 @@ As a self-professed "language nerd", I want to use Advent of Code to sharpen my 
 
 | Day             | Title              | Python              | [Roc](https://www.roc-lang.org/) | Rust               |
 | --------------- | ------------------ | ------------------- | -------------------------------- | ------------------ |
-| [01](./day01/)  | Historian Hysteria | :heavy_check_mark:  | :o:                              | :o:                |
+| [01](./day01/)  | Historian Hysteria | :heavy_check_mark:  | :construction: Working on it...  | :o:                |
 | [02](./day02/)  | Red-Nosed Reports  | :heavy_check_mark:  | :o:                              | :o:                |
 | [03](./day03/)  | Mull It Over       | :heavy_check_mark:  | :o:                              | :heavy_check_mark: |
 | [04](./day04/)  | **TBD**            | :o:                 | :o:                              | :o:                |
