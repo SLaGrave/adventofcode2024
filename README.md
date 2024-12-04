@@ -6,12 +6,12 @@
 
 As a self-professed "language nerd", I want to use Advent of Code to sharpen my skills in programming languages I don't use too much. I will likely do each day in Python 1st, since that's the language I'm most familiar with. After that, I may rewrite the day in a different language. I'll use this table to keep track.
 
-| Day             | Title              | Python              | Rust               |
-| --------------- | ------------------ | ------------------- | ------------------ |
-| [01](./day01/)  | Historian Hysteria | :heavy_check_mark:  | :o:                |
-| [02](./day02/)  | Red-Nosed Reports  | :heavy_check_mark:  | :o:                |
-| [03](./day03/)  | Mull It Over       | :heavy_check_mark:  | :heavy_check_mark: |
-| [04](./day04/)  | Ceres Search       | :heavy_check_mark:  | :o:                |
+| Day             | Title              | Python              | [Roc](https://www.roc-lang.org/) | Rust               |
+| --------------- | ------------------ | ------------------- | -------------------------------- | ------------------ |
+| [01](./day01/)  | Historian Hysteria | :heavy_check_mark:  | :construction: Working on it...  | :o:                |
+| [02](./day02/)  | Red-Nosed Reports  | :heavy_check_mark:  | :o:                              | :o:                |
+| [03](./day03/)  | Mull It Over       | :heavy_check_mark:  | :o:                              | :heavy_check_mark: |
+| [04](./day04/)  | Ceres Search       | :heavy_check_mark:  | :o:                              | :o:                |
 
 ## Notes
 
