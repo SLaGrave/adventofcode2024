@@ -1,0 +1,19 @@
+aoc_bad = _{ASCII}
+
+aoc_do = {"do()"}
+aoc_dont = {"don't()"}
+
+aoc_integer = {
+    ASCII_DIGIT ~ ASCII_DIGIT ~ ASCII_DIGIT
+    | ASCII_DIGIT ~ ASCII_DIGIT
+    | ASCII_DIGIT
+}
+
+aoc_mul = {"mul" ~ "(" ~ aoc_integer ~ "," ~ aoc_integer ~ ")"}
+
+aoc_program = {
+    (
+        aoc_mul
+        | aoc_bad
+    )*
+}
