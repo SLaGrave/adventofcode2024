@@ -55,7 +55,10 @@ class AOCMap:
         return x < 0 or x >= self.width or y < 0 or y >= self.height
 
     def trace(self):
+        self.history = list()
         while not self.out_of_bounds(self.position):
+            if [*self.position, self.direction] in self.history:
+                return None, None
             self.history.append([*self.position, self.direction])
             goal = [
                 self.position[0] + DIRECTION_MAP[self.direction][0],
@@ -68,7 +71,7 @@ class AOCMap:
         tmp = set()
         for item in self.history:
             tmp.add((item[0], item[1]))
-        return len(tmp)
+        return len(tmp), tmp
 
 
 
@@ -78,15 +81,26 @@ def clean_data(data: list) -> list:
 
 
 def part1(data: AOCMap):
-    return data.trace()
+    return data.trace()[0]
 
 
 def part2(data: list):
     s = 0
-    for line in data:
-        # do something
-        ...
-    
+    base = AOCMap(data)
+    route = base.trace()[1]
+    for y in range(base.height):
+        for x in range(base.width):
+            print(" "*80, end="\r")
+            print(f"Row {y}/{base.height}, Col {x}/{base.width}", end="\r")
+            # If we've already got this space as an obstacle
+            if [x, y] in base.obstacles: continue
+            # If this space isn't in the route already
+            if (x, y) not in route: continue
+            new_map = AOCMap(data)
+            new_map.obstacles.append([x, y])
+            x = new_map.trace()[0]
+            if x is None:
+                s += 1
     return s
 
 
@@ -98,5 +112,8 @@ if __name__ == "__main__":
     p1 = part1(p1_map)
     print(f"Part 1 solution:\n{p1}")
     print("====================================")
+    print("NOTE: It's possible the following answer is one too large.")
+    print("I didn't exclude the starting position from being a possible")
+    print("obstacle location.")
     p2 = part2(data.copy())
     print(f"Part 2 solution:\n{p2}")

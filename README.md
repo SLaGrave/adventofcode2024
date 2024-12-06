@@ -13,6 +13,7 @@ As a self-professed "language nerd", I want to use Advent of Code to sharpen my 
 | [03](./day03/)  | Mull It Over       | :heavy_check_mark:  | :heavy_check_mark: |
 | [04](./day04/)  | Ceres Search       | :heavy_check_mark:  | :o:                |
 | [05](./day05/)  | Print Queue        | :heavy_check_mark:  | :o:                |
+| [06](./day06/)  | Guard Gallivant    | :heavy_check_mark:  | :o:                |
 
 ## Notes
 
