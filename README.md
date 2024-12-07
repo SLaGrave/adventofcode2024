@@ -22,3 +22,7 @@ As a self-professed "language nerd", I want to use Advent of Code to sharpen my 
   - Each year, there is one problem that get's built upon over several puzzles. It's often a bytecode or language based puzzle. I expect it will be the memory system started today.
   - Because of this, I wanted to make a system that is more easily expandable.
   - I also just like [pest.rs](https://pest.rs) and wanted an excuse to use it.
+
+- **I don't like my day 7 solution**
+  - It takes just a second to run part 2.
+  - Basically it grows 2^n (3^n in part 2) and I feel like there should be a way to make it better.
