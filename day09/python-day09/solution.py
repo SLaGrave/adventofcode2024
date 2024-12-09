@@ -42,11 +42,44 @@ def part1(data: list):
 
 def part2(data: list):
     s = 0
-    for line in data:
-        # do something
-        ...
-    
-    return s
+    space = list()
+    for idx, value in enumerate(data):
+        if idx % 2 == 0:
+            space.append(["data", int(value), idx/2])
+        else:
+            space.append(["gap", int(value)])
+    new = list()
+    while True:
+        try:
+            last = space.pop()
+        except: break
+        if last[0] == "gap":
+            new.insert(0, last)
+            continue
+        for idx, value in enumerate(space):
+            if value[0] == "data":
+                continue
+            if value[1] == last[1]:
+                tmp = space[idx]
+                space[idx] = last
+                last = tmp
+                break
+            if value[1] > last[1]:
+                space[idx] = last
+                space.insert(idx+1, ["gap", value[1]-last[1]])
+                last = ["gap", last[1]]
+                break
+        new.insert(0, last)
+    c = 0
+    for item in new:
+        if item[0] == "gap":
+            x = 0
+        else:
+            x = item[2]
+        for _ in range(item[1]):
+            s += c * x
+            c += 1
+    return int(s)
 
 
 if __name__ == "__main__":
