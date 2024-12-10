@@ -1,4 +1,4 @@
-PartOne ← /+⌵/-⊟:⍆⊣:⍆⊢.⍉
+PartOne ← /+⌵/-≡⍆⍉
 
 # File Read as String
 &fras "../input.txt"
