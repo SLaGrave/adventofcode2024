@@ -6,4 +6,4 @@ PartTwo ← /+×⟜⊏:⊙⊢◌◌⍥(⊙(⊙⊂:/+⌕:,):°⊂)⊸⧻⇌⇡+1/
 # Make it a 2d array
 ⊜(⊜⋕⊸≠@ )⊸≠@\n
 
-PartTwo ⟜ PartOne
+⊂"Part Two: "°⋕PartTwo⟜(⊂"Part one: "°⋕PartOne)
