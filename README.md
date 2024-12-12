@@ -18,7 +18,7 @@ As a self-professed "language nerd", I want to use Advent of Code to sharpen my 
 | [08](./day08/)  | Resonant Collinearity | :heavy_check_mark:  | :o:                | :o:                          |
 | [09](./day09/)  | Disk Fragmenter       | :heavy_check_mark:  | :o:                | :o:                          |
 | [10](./day10/)  | Hoof It               | :heavy_check_mark:  | :o:                | :o:                          |
-| [11](./day11/)  | Plutonian Pebbles     | :heavy_check_mark:  | :o:                | :o:                          |
+| [11](./day11/)  | Plutonian Pebbles     | :heavy_check_mark:  | :o:                | Part 1                       |
 
 ## Notes
 

@@ -1,10 +1,6 @@
 PartOne ← /+⌵/-≡⍆⍉
-# Part two works on small input but not large... :(
 PartTwo ← /+×⟜⊏:⊙⊢◌◌⍥(⊙(⊙⊂:/+⌕:,):°⊂)⊸⧻⇌⇡+1/↥.⊣,[]⍉
 
-# File Read as String
-&fras "../input.txt"
-# Make it a 2d array
-⊜(⊜⋕⊸≠@ )⊸≠@\n
+[[3 4] [4 3] [2 5] [1 3] [3 9] [3 3]]
 
-⊂"Part one: "°⋕PartOne
+⊂"Part Two: "°⋕PartTwo⟜(⊂"Part one: "°⋕PartOne)
