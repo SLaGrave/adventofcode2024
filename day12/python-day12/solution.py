@@ -74,6 +74,39 @@ def part1(data: list):
     return s
 
 
+def det_num_walls(inp):
+    hori = list()
+    vert = list()
+    for (x, y) in inp:
+        if int(x) == x:
+            hori.append((y, x))
+        else:
+            vert.append((x, y))
+    hori = sorted(hori)
+    vert = sorted(vert)
+    new = list()
+    for wall in hori:
+        if len(new) == 0:
+            new.append([wall[0], [wall[1]]])
+        else:
+            if wall[0] == new[-1][0] and abs(wall[1]-new[-1][1][-1])==1:
+                new[-1][1].append(wall[1])
+            else:
+                new.append([wall[0], [wall[1]]])
+    hori = new
+    new = list()
+    for wall in vert:
+        if len(new) == 0:
+            new.append([wall[0], [wall[1]]])
+        else:
+            if wall[0] == new[-1][0] and abs(wall[1]-new[-1][1][-1])==1:
+                new[-1][1].append(wall[1])
+            else:
+                new.append([wall[0], [wall[1]]])
+    vert = new
+    print(hori, vert)
+    return len(hori) + len(vert)
+
 def part2(data: list):
     s = 0
     idx = 0
@@ -117,7 +150,7 @@ def part2(data: list):
     sames = [sorted(q) for q in sames]
     costs = list()
     for _ in range(idx):
-        costs.append([0, set()])
+        costs.append([0, list()])
     for y in range(len(data)):
         for x in range(len(data[y])):
             item = data[y][x]
@@ -126,10 +159,11 @@ def part2(data: list):
                     item[2] = same[0]
             costs[item[2]][0] += 1
             for tmp in item[1]:
-                costs[item[2]][1].add(tmp)
+                costs[item[2]][1].append(tmp)
     for item in costs:
-        print(item, item[0] * len(item[1]))
-        s += item[0] * len(item[1])
+        i = det_num_walls(item[1])
+        print(item[0], i)
+        s += item[0] * i
     return s
 
 

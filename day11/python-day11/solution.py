@@ -37,7 +37,7 @@ def part2(data: list):
     for item in data:
         dd[item] += 1
 
-    for _ in range(75):
+    for _ in range(2024):
         new = defaultdict(int)
         for key, value in dd.items():
             answers = logic(key)
