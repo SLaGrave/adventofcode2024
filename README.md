@@ -19,7 +19,7 @@ As a self-professed "language nerd", I want to use Advent of Code to sharpen my 
 | [09](./day09/)  | Disk Fragmenter       | :heavy_check_mark:  | :o:                | :o:                          |
 | [10](./day10/)  | Hoof It               | :heavy_check_mark:  | :o:                | :o:                          |
 | [11](./day11/)  | Plutonian Pebbles     | :heavy_check_mark:  | :o:                | :one:                        |
-| [12](./day12/)  | Garden Groups         | :one:               | :o:                | :one:                        |
+| [12](./day12/)  | Garden Groups         | :one:               | :o:                | :o:                          |
 
 ## Notes
 
