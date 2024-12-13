@@ -20,6 +20,7 @@ As a self-professed "language nerd", I want to use Advent of Code to sharpen my 
 | [10](./day10/)  | Hoof It               | :heavy_check_mark:  | :o:                | :o:                          |
 | [11](./day11/)  | Plutonian Pebbles     | :heavy_check_mark:  | :o:                | :one:                        |
 | [12](./day12/)  | Garden Groups         | :one:               | :o:                | :o:                          |
+| [13](./day13/)  | Claw Contraption      | :heavy_check_mark:  | :o:                | :o:                          |
 
 ## Notes
 
