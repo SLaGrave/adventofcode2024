@@ -1,3 +1,7 @@
+from PIL import Image
+from tqdm import tqdm
+
+
 def clean_data(data: list) -> list:
     data = [line.strip() for line in data]
     new = list()
@@ -46,8 +50,6 @@ def part1(data: list):
     # Setup
     width = 101
     height = 103
-    # width = 11
-    # height = 7
     robots = list()
     for item in data:
         robots.append(Robot(*item, width, height))
@@ -59,13 +61,34 @@ def part1(data: list):
     return q[1] * q[2] * q[3] * q[4]
 
 
+def flatten_list(lst):
+    flattened = []
+    for sublist in lst:
+        for item in sublist:
+            flattened.append(item)
+    return flattened
+
+
 def part2(data: list):
-    s = 0
-    for line in data:
-        # do something
-        ...
-    
-    return s
+     # Setup
+    width = 101
+    height = 103
+    robots = list()
+    for item in data:
+        robots.append(Robot(*item, width, height))
+    for i in tqdm(range(width * height * 1)):
+        out = list()
+        for _ in range(height+1):
+            row = list()
+            for _ in range(width+1):
+                row.append(False)
+            out.append(row)
+        for robot in robots:
+            robot.move()
+            out[robot.y][robot.x] = True
+        image = Image.new("1", (width+1, height+1))
+        image.putdata(flatten_list(out))
+        image.save(f"../images/{i}.png")
 
 
 if __name__ == "__main__":
@@ -76,4 +99,4 @@ if __name__ == "__main__":
     print(f"Part 1 solution:\n{p1}")
     print("====================================")
     p2 = part2(data.copy())
-    print(f"Part 2 solution:\n{p2}")
+    print(f"Part 2 solution:\nPart Two is kinda weird today - Good luck!")
