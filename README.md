@@ -22,6 +22,7 @@ As a self-professed "language nerd", I want to use Advent of Code to sharpen my 
 | [12](./day12/)  | Garden Groups         | :one:               | :o:                | :o:                          |
 | [13](./day13/)  | Claw Contraption      | :heavy_check_mark:  | :o:                | :o:                          |
 | [14](./day14/)  | Restroom Redoubt      | :heavy_check_mark:  | :o:                | :o:                          |
+| [15](./day15/)  | Warehouse Woes        | :one:               | :o:                | :o:                          |
 
 ## Notes
 
@@ -38,4 +39,4 @@ As a self-professed "language nerd", I want to use Advent of Code to sharpen my 
   - The second part is a little whack. It will generate a ton of images.
   - You can search manually, if you want...
   - Or just sort by size. PNG compression makes the tree the smallest image.
-![Day 14's tree](./8052.png)
+  - ![Day 14's tree](./8052.png)

@@ -1,4 +1,7 @@
 */input.txt
+*/input1.txt
+*/input2.txt
+
 .DS_Store
 
 # Rust specific gitignore
