@@ -64,12 +64,22 @@ def part1(map, dirs):
     return s
 
 
-def part2(data, dirs):
+def embiggen_map(map):
+    new = list()
+    for line in map:
+        new_line = list()
+        for c in line:
+            if c == "#": new_line.append("##")
+            elif c == "O": new_line.append("[]")
+            elif c == ".": new_line.append("..")
+            elif c == "@": new_line.append("@.")
+        new.append(new_line)
+    return new
+
+
+def part2(map, dirs):
     s = 0
-    for line in data:
-        # do something
-        ...
-    
+    map = embiggen_map(map)
     return s
 
 
@@ -81,9 +91,10 @@ if __name__ == "__main__":
         dirs = dirs.strip()
         dirs = dirs.replace("\n", "")
     map = clean_data(data)
-    p1 = part1(map.copy(), dirs)
+    map1 = clean_data(data.copy())
+    p1 = part1(map, dirs)
     print(f"Part 1 solution:\n{p1}")
     print("====================================")
-    p2 = part2(map.copy(), dirs)
+    p2 = part2(map1, dirs)
     print(f"Part 2 solution:\n{p2}")
 
