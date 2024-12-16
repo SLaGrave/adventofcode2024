@@ -22,7 +22,8 @@ As a self-professed "language nerd", I want to use Advent of Code to sharpen my 
 | [12](./day12/)  | Garden Groups         | :one:               | :o:                | :o:                          |
 | [13](./day13/)  | Claw Contraption      | :heavy_check_mark:  | :o:                | :o:                          |
 | [14](./day14/)  | Restroom Redoubt      | :heavy_check_mark:  | :o:                | :o:                          |
-| [15](./day15/)  | Warehouse Woes        | :one:               | :o:                | :o:                          |z
+| [15](./day15/)  | Warehouse Woes        | :one:               | :o:                | :o:                          |
+| [16](./day16/)  | Reindeer Maze         | :one:               | :o:                | :o:                          |
 
 ## Notes
 
