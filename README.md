@@ -29,6 +29,7 @@ As a self-professed "language nerd", I want to use Advent of Code to sharpen my 
 | [15](./day15/)  | Warehouse Woes         | :one:               | :o:                | :o:                          |
 | [16](./day16/)  | Reindeer Maze          | :one:               | :o:                | :o:                          |
 | [17](./day17/)  | Chronospatial Computer | :one:               | :o:                | :o:                          |
+| [18](./day18/)  | RAM Run                | :heavy_check_mark:  | :o:                | :o:                          |
 
 </details>
 
