@@ -6,6 +6,10 @@
 
 As a self-professed "language nerd", I want to use Advent of Code to sharpen my skills in programming languages I don't use too much. I will likely do each day in Python 1st, since that's the language I'm most familiar with. After that, I may rewrite the day in a different language. I'll use this table to keep track.
 
+<details>
+
+<summary>My big tables of languages I've used each day (mostly Python)</summary>
+
 | Day             | Title                  | Python              | Rust               | [Uiua](https://www.uiua.org) |
 | --------------- | ---------------------- | ------------------- | ------------------ | ---------------------------- |
 | [01](./day01/)  | Historian Hysteria     | :heavy_check_mark:  | :o:                | :heavy_check_mark:           |
@@ -26,6 +30,8 @@ As a self-professed "language nerd", I want to use Advent of Code to sharpen my 
 | [16](./day16/)  | Reindeer Maze          | :one:               | :o:                | :o:                          |
 | [17](./day17/)  | Chronospatial Computer | :one:               | :o:                | :o:                          |
 
+</details>
+
 ## Notes
 
 - **Why I've done day 3 in Rust**
@@ -42,3 +48,7 @@ As a self-professed "language nerd", I want to use Advent of Code to sharpen my 
   - You can search manually, if you want...
   - Or just sort by size. PNG compression makes the tree the smallest image.
   - ![Day 14's tree](./8052.png)
+
+- **Day 17**
+  - Part two is long since I just brute forced it.
+  - Restart code at: 1644410000

@@ -73,7 +73,30 @@ class Program:
             inc = self.perform(program[self.ic], program[self.ic+1])
             if inc:
                 self.ic += 2
-        return self.output
+        return ",".join([str(q) for q in self.output])
+    
+    def run_part_two(self, program, a_to_attempt):
+        # Reset everything
+        self.a = a_to_attempt
+        self.b = 0
+        self.c = 0
+        self.ic = 0
+        self.output = []
+
+        while self.ic >= 0 and self.ic < len(program):
+            inc = self.perform(program[self.ic], program[self.ic+1])
+            if inc:
+                self.ic += 2
+            if len(self.output) > len(program):
+                return None
+            for idx, value in enumerate(self.output):
+                if value != program[idx]:
+                    return None
+
+        if program == self.output:
+            return a_to_attempt
+        else:
+            return None
 
 
 def part1(data: list):
@@ -83,13 +106,14 @@ def part1(data: list):
 
 def part2(data: list):
     a = 0
-    # while True:
-    #     p = Program(a)
-    #     x = p.run(data)
-    #     if x == data:
-    #         break
-    #     a += 1
-    return a
+    p = Program()
+    while True:
+        if a%100==0:
+            print(f"Attempting A={a}", end="\r")
+        x = p.run_part_two(data, a)
+        if x is not None:
+            return x
+        a += 1
 
 
 if __name__ == "__main__":
