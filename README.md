@@ -30,7 +30,7 @@ As a self-professed "language nerd", I want to use Advent of Code to sharpen my 
 | [16](./day16/)  | Reindeer Maze          | :one:               | :o:                | :o:                          |
 | [17](./day17/)  | Chronospatial Computer | :one:               | :o:                | :o:                          |
 | [18](./day18/)  | RAM Run                | :heavy_check_mark:  | :o:                | :o:                          |
-| [19](./day19/)  | Linen Layout           | :o:                 | :o:                | :o:                          |
+| [19](./day19/)  | Linen Layout           | :sob:               | :o:                | :o:                          |
 | [20](./day20/)  | Race Condition         | :one:               | :o:                | :o:                          |
 
 
@@ -56,3 +56,7 @@ As a self-professed "language nerd", I want to use Advent of Code to sharpen my 
 - **Day 17**
   - Part two is long since I tried to brute forced it.
   - Restart code at: 1644410000
+
+- **Day 19**
+  - This shit works for the example, but too slow for my given input
+  - :sob:
