@@ -32,6 +32,7 @@ As a self-professed "language nerd", I want to use Advent of Code to sharpen my 
 | [18](./day18/)  | RAM Run                | :heavy_check_mark:  | :o:                | :o:                          |
 | [19](./day19/)  | Linen Layout           | :one:               | :o:                | :o:                          |
 | [20](./day20/)  | Race Condition         | :one:               | :o:                | :o:                          |
+| [21](./day21/)  | Keypad Conundrum       | :o:                 | :o:                | :o:                          |
 
 
 </details>
