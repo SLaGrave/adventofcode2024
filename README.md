@@ -34,6 +34,7 @@ As a self-professed "language nerd", I want to use Advent of Code to sharpen my 
 | [20](./day20/)  | Race Condition         | :one:               | :o:                | :o:                          |
 | [21](./day21/)  | Keypad Conundrum       | :o:                 | :o:                | :o:                          |
 | [22](./day22/)  | Monkey Market          | :one:               | :o:                | :o:                          |
+| [23](./day23/)  | LAN Party              | :one:               | :o:                | :o:                          |
 
 
 </details>
