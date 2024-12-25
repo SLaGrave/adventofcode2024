@@ -36,6 +36,7 @@ As a self-professed "language nerd", I want to use Advent of Code to sharpen my 
 | [22](./day22/)  | Monkey Market          | :one:               | :o:                | :o:                          |
 | [23](./day23/)  | LAN Party              | :one:               | :o:                | :o:                          |
 | [24](./day24/)  | Crossed Wires          | :one:               | :o:                | :o:                          |
+| [25](./day25/)  | Code Chronicle         | :one:               | :o:                | :o:                          |
 
 
 </details>
